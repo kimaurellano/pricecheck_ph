@@ -1,0 +1,25 @@
+[
+  {
+    "id": "rice-5kg-local",
+    "name": "Well-Milled Rice",
+    "brand": "Generic",
+    "sizeValue": 5,
+    "sizeUnit": "kg",
+    "srp": 320.00,
+    "prices": [
+      {"store": "Store A", "city": "Mandaluyong", "price": 335.00, "date": "2025-09-05"},
+      {"store": "Store B", "city": "Quezon City", "price": 345.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "sardines-155g",
+    "name": "Sardines in Tomato Sauce",
+    "brand": "SampleBrand",
+    "sizeValue": 155,
+    "sizeUnit": "g",
+    "srp": 28.25,
+    "prices": [
+      {"store": "Store A", "city": "Mandaluyong", "price": 30.00, "date": "2025-09-05"}
+    ]
+  }
+]
