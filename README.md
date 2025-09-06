@@ -2,6 +2,8 @@
 
 Give Filipinos a clear view of common products (grocery, sari‑sari store, talipapa/wet markets) with **estimated prices** and **where those prices were seen**. Start small, get useful, then scale.
 
+I really want this to happen. Something we filipinos could be proud of. A software product that can innovate created by filipinos.
+
 ---
 
 ## Vision
