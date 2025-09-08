@@ -24,6 +24,21 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
+        actions: [
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              if (value == 'admin') {
+                Navigator.pushNamed(context, '/Admin');
+              }
+            },
+            itemBuilder: (context) => [
+              const PopupMenuItem<String>(
+                value: 'admin',
+                child: Text('Admin'),
+              ),
+            ],
+          ),
+        ],
       ),
       body: Column(
         children: [

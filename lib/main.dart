@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pricecheck_ph/provider/product_provider.dart';
+import 'package:pricecheck_ph/view/admin_page.dart';
 import 'package:pricecheck_ph/view/home_page.dart';
 import 'package:pricecheck_ph/view/product_details_page.dart';
 import 'package:provider/provider.dart';
@@ -25,6 +26,7 @@ class MainApp extends StatelessWidget {
         '/Home': (context) => const HomePage(),
         '/ProductDetails': (context) => const ProductDetailsPage(),
         '/Favorites': (context) => const HomePage(),
+        '/Admin': (context) => const AdminPage(),
       },
     );
   }
