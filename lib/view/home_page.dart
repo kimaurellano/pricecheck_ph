@@ -52,6 +52,10 @@ class _HomePageState extends State<HomePage> {
                   subtitle: Text(filteredItems[index].brand),
                   trailing:
                       Text('₱${filteredItems[index].srp.toStringAsFixed(2)}'),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/ProductDetails',
+                        arguments: filteredItems[index]);
+                  },
                 );
               },
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pricecheck_ph/provider/product_provider.dart';
 import 'package:pricecheck_ph/view/home_page.dart';
+import 'package:pricecheck_ph/view/product_details_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MainApp extends StatelessWidget {
       initialRoute: '/Home',
       routes: {
         '/Home': (context) => const HomePage(),
-        '/ProductDetails': (context) => const HomePage(),
+        '/ProductDetails': (context) => const ProductDetailsPage(),
         '/Favorites': (context) => const HomePage(),
       },
     );

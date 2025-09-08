@@ -1,32 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:pricecheck_ph/model/Product.dart';
 
 class ProductDetailsPage extends StatelessWidget {
-  final String name;
-  final String brand;
-  final num sizeValue;
-  final String sizeUnit;
-  final double srp;
-  final String? productImageUrl;
-  final String? productDescription;
-  final List<Map<String, dynamic>> prices;
-
-  const ProductDetailsPage({
-    super.key,
-    required this.name,
-    required this.brand,
-    required this.sizeValue,
-    required this.sizeUnit,
-    required this.srp,
-    this.productImageUrl,
-    this.productDescription,
-    required this.prices,
-  });
+  const ProductDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final product = ModalRoute.of(context)!.settings.arguments as Product?;
+    if (product == null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Product Details')),
+        body: const Center(child: Text('No product data provided.')),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(name),
+        title: Text(product.name),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -34,49 +24,36 @@ class ProductDetailsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (productImageUrl != null && productImageUrl!.isNotEmpty)
-                Center(
-                  child: Image.network(
-                    productImageUrl!,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
-                ),
               const SizedBox(height: 16),
               Text(
-                name,
+                product.name,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: 8),
               Text(
-                'Brand: $brand',
+                'Brand: ${product.brand}',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 4),
               Text(
-                'Size: $sizeValue $sizeUnit',
+                'Size: ${product.sizeValue} ${product.sizeUnit}',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 8),
               Text(
-                'SRP: ₱${srp.toStringAsFixed(2)}',
+                'SRP: ₱${product.srp.toStringAsFixed(2)}',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: Colors.blueGrey,
                       fontWeight: FontWeight.bold,
                     ),
               ),
               const SizedBox(height: 16),
-              if (productDescription != null && productDescription!.isNotEmpty)
-                Text(
-                  productDescription!,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
               const SizedBox(height: 24),
               Text(
                 'Prices from stores:',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
-              ...prices.map((price) => Card(
+              ...product.prices.map((price) => Card(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     child: ListTile(
                       title: Text('${price['store']} (${price['city']})'),
