@@ -1,25 +1,223 @@
 [
   {
-    "id": "rice-5kg-local",
-    "name": "Well-Milled Rice",
-    "brand": "Generic",
+    "id": "rice-5kg-jasmine",
+    "name": "Jasmine Rice",
+    "brand": "Golden Grains",
     "sizeValue": 5,
     "sizeUnit": "kg",
     "srp": 320.00,
     "prices": [
-      {"store": "Store A", "city": "Mandaluyong", "price": 335.00, "date": "2025-09-05"},
-      {"store": "Store B", "city": "Quezon City", "price": 345.00, "date": "2025-09-05"}
+      {"store": "SM Supermarket", "city": "Makati", "price": 335.00, "date": "2025-09-05"},
+      {"store": "Robinsons", "city": "Quezon City", "price": 340.00, "date": "2025-09-05"}
     ]
   },
   {
-    "id": "sardines-155g",
+    "id": "rice-5kg-dinorado",
+    "name": "Dinorado Rice",
+    "brand": "Sinandomeng",
+    "sizeValue": 5,
+    "sizeUnit": "kg",
+    "srp": 345.00,
+    "prices": [
+      {"store": "Puregold", "city": "Pasig", "price": 350.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "sardines-155g-555",
     "name": "Sardines in Tomato Sauce",
-    "brand": "SampleBrand",
+    "brand": "555",
     "sizeValue": 155,
     "sizeUnit": "g",
-    "srp": 28.25,
+    "srp": 25.00,
     "prices": [
-      {"store": "Store A", "city": "Mandaluyong", "price": 30.00, "date": "2025-09-05"}
+      {"store": "SM Hypermarket", "city": "Taguig", "price": 26.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "cornedbeef-150g-purefoods",
+    "name": "Corned Beef",
+    "brand": "Purefoods",
+    "sizeValue": 150,
+    "sizeUnit": "g",
+    "srp": 52.00,
+    "prices": [
+      {"store": "Shopwise", "city": "Mandaluyong", "price": 53.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "tuna-180g-century",
+    "name": "Canned Tuna Flakes",
+    "brand": "Century",
+    "sizeValue": 180,
+    "sizeUnit": "g",
+    "srp": 55.00,
+    "prices": [
+      {"store": "Landers", "city": "Quezon City", "price": 56.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "noodles-55g-luckyme-beef",
+    "name": "Instant Noodles Beef",
+    "brand": "Lucky Me!",
+    "sizeValue": 55,
+    "sizeUnit": "g",
+    "srp": 15.00,
+    "prices": [
+      {"store": "7-Eleven", "city": "Makati", "price": 16.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "noodles-55g-payless-chicken",
+    "name": "Instant Noodles Chicken",
+    "brand": "Payless",
+    "sizeValue": 55,
+    "sizeUnit": "g",
+    "srp": 12.00,
+    "prices": [
+      {"store": "MiniStop", "city": "Taguig", "price": 13.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "bread-600g-gardenia",
+    "name": "Loaf Bread",
+    "brand": "Gardenia",
+    "sizeValue": 600,
+    "sizeUnit": "g",
+    "srp": 78.00,
+    "prices": [
+      {"store": "SM Supermarket", "city": "Pasay", "price": 80.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "peanutbutter-350g-lilys",
+    "name": "Creamy Peanut Butter",
+    "brand": "Lily’s",
+    "sizeValue": 350,
+    "sizeUnit": "g",
+    "srp": 165.00,
+    "prices": [
+      {"store": "Robinsons", "city": "Manila", "price": 168.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "milkpowder-320g-bearbrand",
+    "name": "Powdered Milk Drink",
+    "brand": "Bear Brand",
+    "sizeValue": 320,
+    "sizeUnit": "g",
+    "srp": 120.00,
+    "prices": [
+      {"store": "Puregold", "city": "Cavite", "price": 122.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "milk-370ml-alaska",
+    "name": "Evaporated Milk",
+    "brand": "Alaska",
+    "sizeValue": 370,
+    "sizeUnit": "ml",
+    "srp": 38.00,
+    "prices": [
+      {"store": "WalterMart", "city": "Laguna", "price": 39.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "soysauce-1l-datoputi",
+    "name": "Soy Sauce",
+    "brand": "Datu Puti",
+    "sizeValue": 1,
+    "sizeUnit": "L",
+    "srp": 48.00,
+    "prices": [
+      {"store": "SM Hypermarket", "city": "Quezon City", "price": 50.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "vinegar-1l-datoputi",
+    "name": "Vinegar",
+    "brand": "Datu Puti",
+    "sizeValue": 1,
+    "sizeUnit": "L",
+    "srp": 42.00,
+    "prices": [
+      {"store": "Robinsons", "city": "Pasig", "price": 43.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "oil-1l-goldenfiesta",
+    "name": "Cooking Oil",
+    "brand": "Golden Fiesta",
+    "sizeValue": 1,
+    "sizeUnit": "L",
+    "srp": 120.00,
+    "prices": [
+      {"store": "Puregold", "city": "Makati", "price": 123.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "sugar-1kg-local",
+    "name": "White Sugar",
+    "brand": "Local",
+    "sizeValue": 1,
+    "sizeUnit": "kg",
+    "srp": 78.00,
+    "prices": [
+      {"store": "SM Supermarket", "city": "Manila", "price": 79.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "salt-1kg-local",
+    "name": "Rock Salt",
+    "brand": "Local",
+    "sizeValue": 1,
+    "sizeUnit": "kg",
+    "srp": 20.00,
+    "prices": [
+      {"store": "Wet Market", "city": "Cavite", "price": 21.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "dishwashing-250ml-joy",
+    "name": "Dishwashing Liquid",
+    "brand": "Joy",
+    "sizeValue": 250,
+    "sizeUnit": "ml",
+    "srp": 65.00,
+    "prices": [
+      {"store": "SM Hypermarket", "city": "Pasig", "price": 66.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "detergent-800g-surf",
+    "name": "Laundry Detergent",
+    "brand": "Surf",
+    "sizeValue": 800,
+    "sizeUnit": "g",
+    "srp": 75.00,
+    "prices": [
+      {"store": "Robinsons", "city": "Laguna", "price": 76.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "coffee-30g-nescafe",
+    "name": "Coffee Mix 3-in-1",
+    "brand": "Nescafe",
+    "sizeValue": 30,
+    "sizeUnit": "g",
+    "srp": 12.00,
+    "prices": [
+      {"store": "7-Eleven", "city": "Manila", "price": 13.00, "date": "2025-09-05"}
+    ]
+  },
+  {
+    "id": "water-500ml-wilkins",
+    "name": "Bottled Water",
+    "brand": "Wilkins",
+    "sizeValue": 500,
+    "sizeUnit": "ml",
+    "srp": 20.00,
+    "prices": [
+      {"store": "Mercury Drug", "city": "Makati", "price": 22.00, "date": "2025-09-05"}
     ]
   }
 ]
